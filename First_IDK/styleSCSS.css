@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* root */
+:root {
+  --step--2: clamp(1.00rem, calc(0.62rem + 0.38vw), 0.69rem);
+  --step--1: clamp(1.25rem, calc(0.73rem + 0.52vw), 0.83rem);
+  --step-0: clamp(1.00rem, calc(0.86rem + 0.70vw), 1.56rem);
+  --step-1: clamp(1.20rem, calc(1.01rem + 0.94vw), 1.95rem);
+  --step-2: clamp(1.44rem, calc(1.19rem + 1.25vw), 2.44rem);
+  --step-3: clamp(1.73rem, calc(1.40rem + 1.65vw), 3.05rem);
+  --step-4: clamp(2.07rem, calc(1.64rem + 2.18vw), 3.82rem);
+  --step-5: clamp(2.49rem, calc(1.92rem + 2.85vw), 4.77rem);
+}
+
+span {
+  color: orangered;
+}
+
+.container {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url(images/ganteli-trenazhernyy-zal.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/ganteli-trenazhernyy-zal.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container nav {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  opacity: .5;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav .left-side {
+  margin-left: 2em;
+}
+
+.container nav .left-side h1 {
+  font-size: 2em;
+  color: black;
+}
+
+.container nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.container nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+@media (max-width: 599px) {
+  .container .right-side {
+    display: none;
+  }
+}
+
+.container .flex-uvodni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.container .flex-uvodni__childBox p {
+  font-size: var(--step-2);
+  color: white;
+  font-weight: bold;
+}
+
+.container .flex-uvodni__childBox h1 {
+  font-size: var(--step-5);
+  color: white;
+}
+
+.container .flex-uvodni__childBox .ref {
+  margin-top: 1.3em;
+}
+
+.container .flex-uvodni__childBox .ref .member-ref {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: orangered;
+  border: none;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container .flex-uvodni__childBox .ref .member-ref:hover {
+  background-color: white;
+}
+/*# sourceMappingURL=styleSCSS.css.map */
